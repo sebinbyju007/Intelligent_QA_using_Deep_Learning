@@ -33,3 +33,8 @@ body form #Search{
     height: 2pc;
     width: 5pc;
 }
+
+body #answer{
+    width: 100%;
+    height: 15pc;
+}
