@@ -1,0 +1,54 @@
+body{
+    background-color: ivory;
+    
+    
+    
+}
+
+body #logo{
+    color: #282828;
+    text-align: center;
+    font-size: 7pc;
+    background: black;
+}
+
+body form #searchBox{
+    width: 80%;
+    text-align: center;
+    height: 3pc;
+    border-radius: 10px;
+    
+
+}
+
+body form{
+    padding-left: 15%;
+}
+
+body form .xyz{
+    padding-top: 3pc;
+    padding-left: 38%;
+    border: greenyellow;
+
+}
+
+body form #Search{
+    border-radius: 3px;
+    height: 2pc;
+    width: 5pc;
+}
+
+body #answer{
+
+    width: 90%;
+    height: 10pc;
+    margin-left: 5pc;
+    margin-top: 5pc;
+    
+    background-color: #fff;
+    
+}
+body{
+    margin: 0px;
+}
+
