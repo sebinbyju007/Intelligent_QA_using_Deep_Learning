@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent QA</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/result.css') }}">
+
+
+    <script type='text/javascript'>
+           
+        function scrollFunction2()
+        {
+            var query2 = document.getElementById("r_query").value;
+        }
+     </script>
+
+
+     <style>
+
+        body{background-color:white;}
+
+        body .header{background-color: aliceblue; height: 6pc; padding-left: 2pc;}
+        #header_table{padding-left: 2pc;}
+        #col1{padding-left: 3pc;}
+        #logo_img{width:3pc; height:3pc; padding-left:2pc;}
+        #col2{padding-left: 5pc;}
+        #r_query{Width: 40pc; height:2pc; border-radius: 2pc; margin-top: 2pc; margin-left: 5pc; padding: 1pc;}
+        #r_search{margin-left: 2pc; border-radius: 1pc; width:9pc; height: 2pc;}
+        #r_output{color:red;}
+        #r_o{width: max-100%; height: 60%; border: 6px double; padding: 5px; margin: 2px; margin-top:2pc; }
+
+     </style>
+
+</head>
+
+
+
+
+<body>
+    
+    <div class="header">
+        <table id="header_table"> 
+
+        <td id="col1"><image src="{{url_for('static', filename = 'images/logo.png')}}"  id= "logo_img" ></image> <br/> <h3>Intelligent QA </h3> </td>
+        <td id="col2">
+            <form id="r_form" method="POST" action="">
+                <input type="textarea" name="r_query" id="r_query">
+                <input type="submit" name="r_button" id="r_search" onclick="scrollFunction2()">
+            </form>
+        </td>         
+      
+        </table>
+    </div>
+
+    <br>
+    <hr>
+
+
+    <section class="r_output">
+        {{result1}}
+        
+        <div id="r_o">
+
+            
+            
+            
+            
+
+        </div>
+    
+    
+
+    </section>
+</body>
+</html>
