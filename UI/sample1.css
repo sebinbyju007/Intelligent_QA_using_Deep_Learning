@@ -1,0 +1,130 @@
+body{
+    background-color: ivory;
+    
+}
+
+body #logo{
+    color:#15f4ee;
+    text-align: center;
+    font-size: 7pc;
+    background:transparent;
+    opacity: 0.85;
+}
+
+body form #searchBox{
+    width: 80%;
+    text-align: center;
+    height: 3pc;
+    border-radius: 20px;
+    opacity: 0.85;
+    font-size: 17px;
+    outline: none;
+    border: 5px solid #15f4ee;
+    background: black;
+    padding-left: 92px
+
+
+}
+
+body form{
+    padding-left: 15%;
+}
+
+body form .xyz{
+    padding-top: 3pc;
+    padding-left: 38%;
+    opacity: 0.85;
+    
+
+}
+
+body form #Search{
+    border-radius: 6px;
+    position: relative;
+    height: 2pc;
+    width: 8pc;
+    cursor: pointer;
+    color: #15f4ee;
+    border: 5px solid #15f4ee;
+    font-family: poppins;
+    font-size: 19px;
+    transition: 1.5s;
+    background: black;
+    opacity: 0.85;
+}
+
+body #answer{
+
+    width: 90%;
+    height: 10pc;
+    margin-left: 5pc;
+    margin-top: 5pc;
+    background-color: #fff;
+    opacity:-0.6;
+}
+
+body{
+    margin: 0px;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.socialbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ul{
+    display: flex ;
+}
+ul li{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    height: 60px;
+    width:60px;
+    background: transparent;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    
+}
+u1 li:before{
+position:absolute;
+content: '';
+top:0;
+left: 0;
+background: #d35400;
+height: 100%;
+width: 100%;
+border-radius: 50%;
+z-index: -1;
+transform: scale(0.9);
+transition: .5s;
+}
+ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #d35400;
+}
+ul li:hover{
+    color:red;
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+
+}
+.button:hover{
+box-shadow: 0 5px 40px 0 #15f4ee inset,0 5px 40px 0 #15f4ee,0 5px 40px 0 #15f4ee inset,0 5px 40px 0 #15f4ee;
+ }
+
+.boxstyle:hover{
+    box-shadow: 0 5px 40px 0 #15f4ee inset,0 5px 40px 0 #15f4ee,0 5px 40px 0 #15f4ee inset,0 5px 40px 0 #15f4ee;
+ }
