@@ -1,16 +1,43 @@
-# Intelligent_Sentence_Pair_Similarity_using_Deep_Learning
 
-The project is focused on finding the similarity of two statements. The project is implemented with deep learning technology which includes CNN, BiLSTM and so on. The model is trained on Quora Question Pair Dataset. It used glove.6d file as embedding vector and feature engineering is done on the data. The UI is implemented on Flask micro web framework.
+# Simplifier - INTELLIGENT QUESTION PAIR ANALYSIS USING DEEP LEARNING
 
-Modules
+Today, the world is driven by data and many new technologies and products are at the forefront to provide the right information to users instantly. Every day, we search for thousands of queries related to each domain and that too, in an entirely different way. Based on regions and other factors, the pattern of question changes (semantics) but may have the exact same meaning. This brings a challenge to store answers for every such pattern within the server in order to provide the right answer. So our idea is to analyze two questions and extract certain parameters to determine the similarity of those questions. The deep learning technology is used in the project to find the similarity. Instead of checking for statement similarity, it analyses the sentence intelligently to identify accurately, the meaning of the questions and to output the similarity. Thus by identifying the similarity, it is very useful in many domains that enable them to store only a single copy of the answer for multiple questions having the same meaning. It can also be employed in chatbots and automated answer evaluation software where faculty can check the similarity of answers written by students to the exact answer, thus given marks accordingly. There emerge more domains where this project has a significant role in eliminating redundancy and making daily life more progressive.
+## Modules
+(1) Query Input Module \
+(2) Pre-processing Module \
+(3) Feature Engineering Module \
+(4) Training Module\
+(5) Testing Module\
+(6) Output Generation Module
 
-1. UI (template and static) - Template Files
-2. process.py - Web Application developed on Flask
-3. feature_engineering.py - Feature engineering module
-4. test_program.py - The original model to be run 
-5. ss.pickle -
-6. tokenizer.pickle - 
-7. q_dict.pickle - 
+## Dataset
 
+  [Quora Question Pair Dataset](https://www.kaggle.com/c/quora-question-pairs/data)
+
+## Model
+Our model is the most efficient and the most effective for question similarity calculation.
+We fuse both CNN and BiLSTM to get accurate and precise output. In our model three
+inputs, we have question 1, question 2, and feature engineering values of two questions.
+The two input questions are passed to the embedding layer and copy the output into three.
+The two copies are passed into the Conv1D layer and one copy is passed to BiLSTM.
+The output of the two Conv1D layers is passed into the GlobalMaxPool layer to reduce
+the dimension into two and then concatenate both. At the same time, the output of
+BiLSTM and dense output of feature engineering are concatenated. Then the output of
+both layers is separately passed to the BatchNormalization layer, then to the Dropout
+layer, and followed by that, to the Dense layer. Now we concatenate both of them and
+then passed to series of different layers and finally predict the output using a sigmoid
+function.
+
+|Data|Accuracy|Log-loss|
+|:--------:|:--------:|:--------|
+|Train Data| 89% | 0.22|
+|Validation Data | 89%| 0.23|
+
+ 
+
+
+![model_plot (2)](https://user-images.githubusercontent.com/45265641/125159284-23fb1900-e194-11eb-9a11-a1bc408cbddf.png)
+
+## Screenshots of working model
 
 
