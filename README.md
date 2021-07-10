@@ -40,4 +40,8 @@ function.
 
 ## Screenshots of working model
 
+![homepage_1](https://user-images.githubusercontent.com/45265641/125160785-73ddde00-e19c-11eb-8132-35319c3d0bfc.png)
+![homepage_2](https://user-images.githubusercontent.com/45265641/125160786-750f0b00-e19c-11eb-9f84-c3137db07d1c.png)
+![homepage_3](https://user-images.githubusercontent.com/45265641/125160788-75a7a180-e19c-11eb-864b-72444994a5b3.png)
+![homepage_4](https://user-images.githubusercontent.com/45265641/125160789-75a7a180-e19c-11eb-97f9-4257c1c7137d.png)
 
